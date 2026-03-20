@@ -5,7 +5,6 @@
   <title>Axel Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
@@ -17,18 +16,34 @@
     }
 
     body {
-      background: #0f0f0f;
       color: white;
       scroll-behavior: smooth;
+    }
+
+    /* 🔥 BACKGROUND IMAGE */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+        url("https://cdn.discordapp.com/attachments/1474749204973883508/1474749350461706361/axel_hub_2.png?ex=69be935c&is=69bd41dc&hm=212cd15e88f8399098aa112eb452b3ecc96cce34a9f330f273eda06963d109d1&");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       padding: 20px 50px;
-      background: rgba(0,0,0,0.5);
       position: fixed;
       width: 100%;
+      background: rgba(0,0,0,0.5);
       backdrop-filter: blur(10px);
     }
 
@@ -40,20 +55,10 @@
       margin-left: 20px;
       text-decoration: none;
       color: white;
-      transition: 0.3s;
     }
 
     nav a:hover {
       color: #00ffcc;
-    }
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: radial-gradient(circle, #1a1a1a, #000);
     }
 
     .hero h2 {
@@ -62,7 +67,7 @@
 
     .hero p {
       margin: 20px 0;
-      color: #aaa;
+      color: #ccc;
     }
 
     .btn {
@@ -72,15 +77,11 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #00ccaa;
     }
 
     section {
       padding: 100px 50px;
+      background: #0f0f0f;
     }
 
     .features {
@@ -93,12 +94,6 @@
       background: #1a1a1a;
       padding: 20px;
       border-radius: 15px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      background: #222;
     }
 
     footer {
@@ -113,11 +108,11 @@
 <body>
 
 <header>
-  <h1>Axel Hub</h1>
+  <h1>MyHub</h1>
   <nav>
     <a href="#home">Home</a>
     <a href="#features">Features</a>
-    <a href="#download">Download</a>
+    <a href="https://discord.gg/axelhub">Discord</a>
   </nav>
 </header>
 
@@ -151,11 +146,11 @@
   <h2>Download</h2>
   <p>Get the latest version now</p>
   <br>
-  <a href="#" class="btn">Download Now</a>
+  <a href="https://discord.gg/axelhub" class="btn">Join Discord Now</a>
 </section>
 
 <footer>
-  <p>© 2026 Axel Hub - All rights reserved</p>
+  <p>© 2026 Axel Hub</p>
 </footer>
 
 </body>
